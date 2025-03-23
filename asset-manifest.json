@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffc77c9c.css",
+    "main.js": "/static/js/main.fcd60a4e.js",
+    "static/media/underthekey-logo.svg": "/static/media/underthekey-logo.3a8b4ae9d22b90b2c5b9a2b9dcb32c03.svg",
+    "static/media/text-logo-glass.svg": "/static/media/text-logo-glass.4fda4048d203b2705544ecb1695273ea.svg",
+    "static/media/gloticker-logo.svg": "/static/media/gloticker-logo.79e28597d7e57b63c33fa6e4e72b66dd.svg",
+    "static/media/github.svg": "/static/media/github.1691405fff4f23afdd0b8e2e6b976a8d.svg",
+    "static/media/resume.svg": "/static/media/resume.40168c4451e0b99af32e99481a76f9ca.svg",
+    "static/media/url.svg": "/static/media/url.ce4ff34dcac6d1f9aab908dcd59e492e.svg",
+    "index.html": "/index.html",
+    "main.ffc77c9c.css.map": "/static/css/main.ffc77c9c.css.map",
+    "main.fcd60a4e.js.map": "/static/js/main.fcd60a4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffc77c9c.css",
+    "static/js/main.fcd60a4e.js"
+  ]
+}

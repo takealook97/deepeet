@@ -65,6 +65,12 @@
   font-display: swap;
 }
 
+@layer base {
+  body {
+    @apply bg-[#0D1117] m-0 p-0;
+  }
+}
+
 body {
   margin: 0;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",

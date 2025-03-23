@@ -2,8 +2,8 @@ import React from 'react';
 import Header from './layouts/Header';
 import Body from './layouts/Body';
 import GlassCard from './components/cards/GlassCard';
-import gloticker from './assets/logos/gloticker-logo.svg';
-import underthekey from './assets/logos/underthekey-logo.svg';
+import gloticker from './assets/logos/gloticker-logo.png';
+import underthekey from './assets/logos/underthekey-logo.png';
 
 const App: React.FC = () => {
     return (

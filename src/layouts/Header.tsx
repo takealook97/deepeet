@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logos/text-logo-glass.svg';
+import logo from '../assets/logos/text-logo-glassy.png';
 import resumeIcon from '../assets/icons/resume.svg';
 import githubIcon from '../assets/icons/github.svg';
 
@@ -10,7 +10,7 @@ const Header: React.FC = () => {
             <img
                 src={logo}
                 alt="Logo"
-                className="w-[8rem] sm:w-[9rem] md:w-[10rem] lg:w-[11.76606rem] h-[2.5rem] sm:h-[2.75rem] md:h-[3rem] lg:h-[3.375rem] flex-shrink-0"
+                className="h-[2.5rem] sm:h-[2.75rem] md:h-[3rem] lg:h-[3.375rem] w-auto flex-shrink-0 object-contain"
                 draggable="false"
             />
             <div className="flex-1 flex justify-end gap-3 sm:gap-4 md:gap-5 lg:gap-[1.25rem]">

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d4e45758.css",
-    "main.js": "/static/js/main.851d22d4.js",
+    "main.js": "/static/js/main.e7bb57ed.js",
     "static/media/Pretendard-Black.woff2": "/static/media/Pretendard-Black.c2be1420d8fb4b99a671.woff2",
     "static/media/Pretendard-ExtraBold.woff2": "/static/media/Pretendard-ExtraBold.26df84c2b3b8cb8a4b0c.woff2",
     "static/media/Pretendard-Bold.woff2": "/static/media/Pretendard-Bold.0c6f5e225ff28f456183.woff2",
@@ -13,16 +13,16 @@
     "static/media/Pretendard-Thin.woff2": "/static/media/Pretendard-Thin.bb7cedf4446fa24dda9d.woff2",
     "static/media/gloticker-logo.png": "/static/media/gloticker-logo.387a8d68aa1526b04cba.png",
     "static/media/underthekey-logo.png": "/static/media/underthekey-logo.0f054c2401ceab1c1d8b.png",
-    "static/media/text-logo-glassy.png": "/static/media/text-logo-glassy.e10e073257fafa132541.png",
+    "static/media/text-logo-glassy.png": "/static/media/text-logo-glassy.b78be683f88e46dce6e8.png",
     "static/media/github.svg": "/static/media/github.1691405fff4f23afdd0b8e2e6b976a8d.svg",
     "static/media/resume.svg": "/static/media/resume.40168c4451e0b99af32e99481a76f9ca.svg",
     "static/media/url.svg": "/static/media/url.ce4ff34dcac6d1f9aab908dcd59e492e.svg",
     "index.html": "/index.html",
     "main.d4e45758.css.map": "/static/css/main.d4e45758.css.map",
-    "main.851d22d4.js.map": "/static/js/main.851d22d4.js.map"
+    "main.e7bb57ed.js.map": "/static/js/main.e7bb57ed.js.map"
   },
   "entrypoints": [
     "static/css/main.d4e45758.css",
-    "static/js/main.851d22d4.js"
+    "static/js/main.e7bb57ed.js"
   ]
 }

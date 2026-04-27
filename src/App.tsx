@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './layouts/Header';
 import Body from './layouts/Body';
 import GlassCard from './components/cards/GlassCard';
+import sshift from './assets/logos/sshift-logo.png';
 import gloticker from './assets/logos/gloticker-logo.png';
 import underthekey from './assets/logos/underthekey-logo.png';
 
@@ -11,6 +12,17 @@ const App: React.FC = () => {
             <Header />
             <Body>
                 <div className="flex flex-col gap-5">
+                    <GlassCard
+                        logo={sshift}
+                        logoAlt="SSHift Logo"
+                        title="SSH Server Management Tool"
+                        features={[
+                            "Go-based CLI tool for SSH server management",
+                            "Proxy-Jump support and encrypted password storage",
+                            "Menu system for easy navigation"
+                        ]}
+                        githubLink="https://github.com/takealook97/sshift"
+                    />
                     <GlassCard
                         logo={gloticker}
                         logoAlt="Gloticker Logo"

@@ -6,8 +6,8 @@ import githubIcon from '../../assets/icons/github.svg';
 interface GlassCardProps {
     logo: string;
     logoAlt?: string;
-    brandTitle: string;
-    title: string;
+    brandTitle?: string;
+    title?: string;
     features: string[];
     children?: React.ReactNode;
     brandTitleClassName?: string;
@@ -27,34 +27,71 @@ const GlassCard: React.FC<GlassCardProps> = ({ logo, logoAlt = "Logo", brandTitl
                     <VerticalLine />
                 </div>
 
-                <div className="flex h-full w-full">
-                    <div className="w-[35%] flex-shrink-0 flex items-center overflow-hidden">
-                        <div className="w-full pl-[7.14%] pr-[7.14%] flex flex-col md:flex-row items-center gap-[0.875rem]">
-                            <img
-                                src={logo}
-                                alt={logoAlt}
-                                className="w-16 h-16 md:w-[5vw] md:h-[5vw] min-w-[4rem] min-h-[4rem] max-w-[7.5rem] max-h-[7.5rem] flex-shrink-0 aspect-square"
-                                draggable="false"
-                            />
-                            <h1 className={`text-white font-['Pretendard'] lowercase whitespace-nowrap ${brandTitleClassName}`}>
-                                {brandTitle}
-                            </h1>
+                {brandTitle ? (
+                    <div className="flex h-full w-full">
+                        <div className="w-[35%] flex-shrink-0 flex items-center overflow-hidden">
+                            <div className="w-full pl-[7.14%] pr-[7.14%] flex flex-col md:flex-row items-center gap-[0.875rem]">
+                                <img
+                                    src={logo}
+                                    alt={logoAlt}
+                                    className="w-16 h-16 md:w-[5vw] md:h-[5vw] min-w-[4rem] min-h-[4rem] max-w-[7.5rem] max-h-[7.5rem] flex-shrink-0 aspect-square"
+                                    draggable="false"
+                                />
+                                {brandTitle && (
+                                    <h1 className={`text-white font-['Pretendard'] lowercase whitespace-nowrap ${brandTitleClassName}`}>
+                                        {brandTitle}
+                                    </h1>
+                                )}
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="w-[65%] flex-shrink-0 flex items-center">
-                        <div className="w-full pl-[3.85%] pr-[3.85%]">
-                            <h2 className="text-[#C9D1D9] font-['Pretendard'] text-[1.25rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2.25rem] font-normal leading-normal tracking-[-0.035rem] sm:tracking-[-0.04rem] md:tracking-[-0.05rem] lg:tracking-[-0.0675rem] mb-4 break-words">
-                                {title}
-                            </h2>
-                            <ul className="text-[#C9D1D9] font-['Pretendard'] text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] font-thin leading-[140%] tracking-[-0.025rem] sm:tracking-[-0.03rem] md:tracking-[-0.035rem] lg:tracking-[-0.045rem] space-y-2 break-words">
-                                {features.map((feature, index) => (
-                                    <li key={index}>• {feature}</li>
-                                ))}
-                            </ul>
+                        <div className="w-[65%] flex-shrink-0 flex items-center">
+                            <div className="w-full pl-[3.85%] pr-[3.85%]">
+                                <h2 className="text-[#C9D1D9] font-['Pretendard'] text-[1.25rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2.25rem] font-normal leading-normal tracking-[-0.035rem] sm:tracking-[-0.04rem] md:tracking-[-0.05rem] lg:tracking-[-0.0675rem] mb-4 break-words">
+                                    {title}
+                                </h2>
+                                <ul className="text-[#C9D1D9] font-['Pretendard'] text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] font-thin leading-[140%] tracking-[-0.025rem] sm:tracking-[-0.03rem] md:tracking-[-0.035rem] lg:tracking-[-0.045rem] space-y-2 break-words">
+                                    {features.map((feature, index) => (
+                                        <li key={index}>• {feature}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                ) : (
+                    <div className="flex h-full w-full overflow-hidden">
+                        <div className="w-[35%] flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <div className="flex flex-col items-center gap-[0.875rem] w-full overflow-hidden">
+                                <img
+                                    src={logo}
+                                    alt={logoAlt}
+                                    className="w-[12rem] h-auto sm:w-[14rem] md:w-[16rem] lg:w-[18rem] xl:w-[20rem] object-contain flex-shrink-0"
+                                    draggable="false"
+                                />
+                                {brandTitle && (
+                                    <h1 className={`text-white font-['Pretendard'] lowercase whitespace-nowrap overflow-hidden text-ellipsis w-full text-center ${brandTitleClassName}`}>
+                                        {brandTitle}
+                                    </h1>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="w-[65%] flex-shrink-0 flex items-center overflow-hidden">
+                            <div className="w-full pl-[3.85%] pr-[3.85%] overflow-hidden">
+                                {title && (
+                                    <h2 className="text-[#C9D1D9] font-['Pretendard'] text-[1.25rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2.25rem] font-normal leading-normal tracking-[-0.035rem] sm:tracking-[-0.04rem] md:tracking-[-0.05rem] lg:tracking-[-0.0675rem] mb-4 break-words">
+                                        {title}
+                                    </h2>
+                                )}
+                                <ul className="text-[#C9D1D9] font-['Pretendard'] text-[0.875rem] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] font-thin leading-[140%] tracking-[-0.025rem] sm:tracking-[-0.03rem] md:tracking-[-0.035rem] lg:tracking-[-0.045rem] space-y-2 break-words">
+                                    {features.map((feature, index) => (
+                                        <li key={index}>• {feature}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 <div className="absolute bottom-[1rem] sm:bottom-[1.25rem] md:bottom-[1.375rem] lg:bottom-[1.5rem] right-[2.5rem] sm:right-[3rem] md:right-[3.5rem] lg:right-[4rem] flex items-center gap-2 sm:gap-3 md:gap-3 lg:gap-4">
                     {urlLink && (
